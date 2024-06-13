@@ -11,7 +11,7 @@ const connect = function () {
     () => {
       // 'connect' listener
       console.log("Successfully connected to game server");
-      conn.write("Name: DB"); // Send the client's name to the server
+      conn.write("Name: DSB"); // Send the client's name to the server
     }
   );
 
