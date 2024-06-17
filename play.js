@@ -17,3 +17,12 @@ const setupInput = function () {
   
   return stdin;
 };
+
+// Function to handle user input from stdin
+const handleUserInput = function (key) {
+  // Check for `ctrl + c` which sends a `\u0003` character
+  if (key === '\u0003') {
+    process.exit(); // Exits the program if ctrl + c is pressed
+  }
+};
+setupInput(); // Call the setupInput function to start listening for keyboard input
