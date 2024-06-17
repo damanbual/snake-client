@@ -13,13 +13,9 @@ const connect = function () {
       console.log("Successfully connected to game server");
       conn.write("Name: DSB"); // Send the client's name to the server
 
-      //  Experiment: Send multiple move commands with delays
-      setTimeout(() => conn.write('Move: up'), 50);
-      setTimeout(() => conn.write('Move: right'), 100);
-      setTimeout(() => conn.write('Move: down'), 150);
-      setTimeout(() => conn.write('Move: left'), 200);
-      
-      console.log('Sent multiple move commands to server with delays');
+      // Commented out the Move: up message
+      // conn.write('Move: up');
+      console.log('Connection established');
     }
   );
 
