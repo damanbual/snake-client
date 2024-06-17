@@ -11,3 +11,9 @@ const setupInput = function () {
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
+
+  // Register an event listener for "data" event
+  stdin.on("data", handleUserInput);
+  
+  return stdin;
+};
