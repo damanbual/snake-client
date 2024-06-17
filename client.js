@@ -12,6 +12,8 @@ const connect = function () {
       // 'connect' listener
       console.log("Successfully connected to game server");
       conn.write("Name: DSB"); // Send the client's name to the server
+      conn.write('Move: up'); // Send move up command immediately after connecting
+      console.log('Sent Move: up to server');
     }
   );
 
