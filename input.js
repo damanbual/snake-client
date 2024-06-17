@@ -1,6 +1,9 @@
 
+let connection;
+
 // Function to set up the input interface
-const setupInput = function () {
+const setupInput = function (conn) {
+  connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
@@ -8,6 +11,7 @@ const setupInput = function () {
   
   // Registering an event listener to handle key presses
   stdin.on("data", handleUserInput);
+  
   return stdin;
 };
 
