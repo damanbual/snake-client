@@ -35,6 +35,23 @@ const handleUserInput = function (key) {
   case 'd':
     connection.write('Move: right');
     break;
+  // Special keys for chat messages
+    // (Feel free to customize these messages)
+  case '1':
+    connection.write('Say: Go Long - Snake Joke');
+    break;
+  case '2':
+    connection.write('Say: Watch Out!');
+    break;
+  case '3':
+    connection.write('Say: Nice Move!');
+    break;
+  case '4':
+    connection.write('Say: Oops!');
+    break;
+  case '5':
+    connection.write('Say: GG!');
+    break;
   }
 };
 
