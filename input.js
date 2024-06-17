@@ -1,10 +1,10 @@
 
 // Function to set up the input interface
 const setupInput = function () {
-  const stdin = process.stdin; 
-  stdin.setRawMode(true); 
-  stdin.setEncoding("utf8"); 
-  stdin.resume(); 
+  const stdin = process.stdin;
+  stdin.setRawMode(true);
+  stdin.setEncoding("utf8");
+  stdin.resume();
   
   // Registering an event listener to handle key presses
   stdin.on("data", handleUserInput);
