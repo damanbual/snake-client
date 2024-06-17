@@ -5,6 +5,6 @@ const { connect } = require("./client"); // Import the connect function from cli
 const { setupInput } = require("./input"); // Import the setupInput function from input.js
 
 console.log("Connecting ...");
-connect(); // Establish connection to the server
+const connection = connect(); // Establish connection to the server
 
-setupInput(); // Start listening for keyboard inputs
+setupInput(connection); // Start listening for keyboard inputs
