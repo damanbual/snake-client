@@ -5,8 +5,8 @@ const net = require("net");
 const connect = function () {
   const conn = net.createConnection(
     {
-      host: "localhost", // IP address here
-      port: 50541, // PORT number here
+      host: IP, // Use the IP constant
+      port: PORT, // Use the PORT constant
     },
     () => {
       // 'connect' listener
@@ -15,7 +15,6 @@ const connect = function () {
 
       // Commented out the Move: up message
       // conn.write('Move: up');
-      console.log('Connection established');
     }
   );
 
